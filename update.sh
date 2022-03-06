@@ -9,4 +9,4 @@ git pull >> ./logs/$(date +%Y-%m-%d_%T)-git.log
 find ./logs -name "*.log" -type f -mtime +30 -delete
 
 # cronjobs:
-# 0 * * * * /var/www/0.0.0.0/update.sh
+# 0 * * * * /bin/bash /var/www/0.0.0.0/update.sh
